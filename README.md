@@ -75,6 +75,20 @@ For tiers with fal.ai comparison data in the APIDot catalog, APIDot shows up to 
 
 The same request shape is available as a copy-paste cURL example in curl/generate.md.
 
+## API workflow
+
+```mermaid
+flowchart LR
+    A[Submit generation request] --> B[Receive data.task_id]
+    B --> C{Delivery mode}
+    C -->|Polling| D[Check task status]
+    C -->|Webhook| E[Receive callback_url event]
+    D --> F[Read result URL from finished task]
+    E --> F
+```
+
+Use polling for local tests and webhook delivery for production queues. Store `data.task_id` before the first status check so retries, callbacks, and result URLs can be reconciled safely.
+
 ## Minimal API request
 
 Submit to APIDot's unified async generation endpoint:
