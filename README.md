@@ -2,7 +2,7 @@
 
 Build with the GPT Image 2 API using APIDot: cURL, Node.js, polling, webhooks, pricing, and fal.ai comparison in one production-oriented GitHub repo.
 
-[Get API Key](https://apidot.ai/dashboard/api-key) | [API Docs](https://apidot.ai/docs/gpt-image-2) | [Model Page](https://apidot.ai/models/gpt-image-2) | [Main Examples](https://github.com/APIDotAI/apidot-examples)
+[Try on APIDot](https://apidot.ai/models/gpt-image-2) | [Get API Key](https://apidot.ai/dashboard/api-key) | [API Docs](https://apidot.ai/docs/gpt-image-2) | [Pricing](https://apidot.ai/pricing) | [Main Examples](https://github.com/APIDotAI/apidot-examples)
 
 ## Why this repo exists
 
